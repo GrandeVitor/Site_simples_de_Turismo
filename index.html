@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo no Rio Grande do Sul</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        .banner {
+            background: var(--cinza-card);
+            color: var(--verde-principal);
+            border: 1.5px solid var(--cinza-borda);
+            box-shadow: 0 4px 18px rgba(32,96,61,0.07);
+            padding: 60px 20px 40px 20px;
+            border-radius: 18px;
+            margin-bottom: 40px;
+        }
+        .banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .banner p {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+        }
+        .destaques {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            width: 270px;
+            padding: 22px 18px 18px 18px;
+            text-align: left;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+        .card h3 {
+            color: #8B0000;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #333;
+        }
+        .cta {
+            background: #FFD700;
+            color: #006400;
+            padding: 18px 30px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: inline-block;
+            margin-top: 18px;
+        }
+        .cta:hover {
+            background: #006400;
+            color: #FFD700;
+        }
+        @media (max-width: 900px) {
+            .destaques { flex-direction: column; align-items: center; }
+            .banner { padding: 40px 10px 30px 10px; }
+        }
+        .link-destaque {
+            color: #006400;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .link-destaque:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Turismo no Rio Grande do Sul</h1>
+        <p>Polo: São Lourenço do Sul</p>
+        <p>Participante: Vitor da Silva Rodrigues</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pontos.html">Pontos Turísticos</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="banner">
+            <h2>Bem-vindo ao Rio Grande do Sul!</h2>
+            <p>Explore os encantos do nosso estado: cultura, natureza, gastronomia e hospitalidade únicas.<br>
+            Descubra paisagens deslumbrantes, cidades acolhedoras e tradições marcantes.</p>
+        </section>
+        <section class="destaques">
+            <div class="card">
+                <img src="imagens/gramado.jpg" alt="Gramado e Canela">
+                <h3>Pontos Turísticos</h3>
+                <p>Conheça destinos como Gramado, Canela, os cânions e a maior praia do mundo. <a href="pontos.html" class="link-destaque">Saiba mais</a></p>
+            </div>
+            <div class="card">
+                <img src="imagens/churrasco.jpg" alt="Churrasco Gaúcho">
+                <h3>Gastronomia</h3>
+                <p>Saboreie o tradicional churrasco, chimarrão, cuca e outras delícias típicas. <a href="gastronomia.html" class="link-destaque">Veja pratos</a></p>
+            </div>
+            <div class="card">
+                <img src="imagens/gaucho.jpg" alt="Chimarrão">
+                <h3>Cultura Gaúcha</h3>
+                <p>Descubra festas, danças, música e o orgulho de ser gaúcho. <a href="galeria.html" class="link-destaque">Veja fotos</a></p>
+            </div>
+        </section>
+        <a href="contato.html" class="cta">Entre em contato e planeje sua viagem!</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 Turismo no Rio Grande do Sul - Desenvolvido por Vitor da Silva Rodrigues</p>
+    </footer>
+</body>
+</html>

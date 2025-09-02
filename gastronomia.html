@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gastronomia - Rio Grande do Sul</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        .intro-gastro {
+            background: var(--cinza-card, #F4EBD0);
+            color: var(--verde-principal, #006400);
+            border: 1.5px solid var(--cinza-borda, #ccc);
+            padding: 36px 20px 24px 20px;
+            border-radius: 16px;
+            margin-bottom: 36px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+            text-align: center;
+        }
+        .intro-gastro h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #8B0000;
+        }
+        .cards-gastro {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .gastro-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            width: 320px;
+            padding: 0 0 18px 0;
+            text-align: left;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .gastro-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+        }
+        .gastro-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 14px 14px 0 0;
+        }
+        .gastro-card-content {
+            padding: 18px 18px 0 18px;
+            flex: 1;
+        }
+        .gastro-card h3 {
+            color: #006400;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gastro-card p {
+            font-size: 1rem;
+            color: #333;
+        }
+        .gastro-curiosidade {
+            font-size: 0.98rem;
+            color: #8B0000;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        ul.curiosidades {
+            text-align: left;
+            list-style: square;
+            padding-left: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cta-center {
+            text-align: center;
+            margin: 40px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Montserrat', sans-serif;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            background-color: #f0f0f0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        table thead tr {
+            background-color: #8B0000;
+            color: white;
+        }
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #fff;
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        table a {
+            color: #8B0000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        table a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 900px) {
+            .cards-gastro { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gastronomia Gaúcha</h1>
+        <p>Polo: São Lourenço do Sul</p>
+        <p>Participante: Vitor da Silva Rodrigues</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pontos.html">Pontos Turísticos</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro-gastro">
+            <h2>Pratos Típicos do Rio Grande do Sul</h2>
+            <p>A culinária gaúcha é rica, saborosa e cheia de tradição. Conheça alguns dos pratos mais conhecidos e suas curiosidades!</p>
+            <p>Com forte influência indígena, europeia (alemã e italiana) e dos tropeiros, a cozinha do RS mistura tradição, rusticidade e muito sabor.</p>
+        </section>
+
+        <section class="cards-gastro">
+            <div class="gastro-card">
+                <img src="imagens/churrascaria-em-gramado.jpg" alt="Churrasco">
+                <div class="gastro-card-content">
+                    <h3>Churrasco</h3>
+                    <p>Carne assada na brasa, símbolo das festas e encontros gaúchos. Preparado com cortes nobres e acompanhado de farofa e saladas.</p>
+                    <div class="gastro-curiosidade">Presente em praticamente todo o estado aos domingos.</div>
+                </div>
+            </div>
+            <div class="gastro-card">
+                <img src="imagens/arroz carreteiro.avif" alt="Arroz de Carreteiro">
+                <div class="gastro-card-content">
+                    <h3>Arroz de Carreteiro</h3>
+                    <p>Arroz preparado com carne de charque picada, típico dos tropeiros e viajantes do passado.</p>
+                    <div class="gastro-curiosidade">Prato típico dos tropeiros do passado.</div>
+                </div>
+            </div>
+            <div class="gastro-card">
+                <img src="imagens/chima.jpg" alt="Chimarrão">
+                <div class="gastro-card-content">
+                    <h3>Chimarrão</h3>
+                    <p>Bebida quente feita com erva-mate e água quente, servida na cuia. Símbolo da hospitalidade e da cultura gaúcha.</p>
+                    <div class="gastro-curiosidade">Símbolo da hospitalidade gaúcha.</div>
+                </div>
+            </div>
+            <div class="gastro-card">
+                <img src="imagens/cuca-alema.jpeg" alt="Cuca">
+                <div class="gastro-card-content">
+                    <h3>Cuca</h3>
+                    <p>Pão doce coberto com farofa de açúcar, herança da culinária alemã no RS. Pode ter recheios de frutas ou chocolate.</p>
+                    <div class="gastro-curiosidade">Herança da culinária alemã no RS.</div>
+                </div>
+            </div>
+            <div class="gastro-card">
+                <img src="imagens/pinhão.webp" alt="Pinhão">
+                <div class="gastro-card-content">
+                    <h3>Pinhão</h3>
+                    <p>Semente da araucária, cozida e servida como petisco ou acompanhamento, especialmente no inverno.</p>
+                    <div class="gastro-curiosidade">Consumido principalmente no inverno.</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="gastro-curiosidade" style="text-align:center; margin-top: 16px;">
+            Quer experimentar todos esses sabores? Visite o interior do estado e participe de festas típicas, como a Fenadoce e a Festa da Uva!
+        </div>
+
+        <section class="intro-gastro" style="background-color:#fffbe6;">
+            <h2>Curiosidades sobre a Gastronomia Gaúcha</h2>
+            <ul class="curiosidades">
+                <li>🍖 O churrasco gaúcho é assado em espetos e costuma ser temperado apenas com sal grosso.</li>
+                <li>🌽 Muitos pratos ainda seguem receitas passadas de geração em geração por famílias do interior.</li>
+                <li>🍷 A região da Serra Gaúcha também é conhecida por sua produção de vinhos e queijos coloniais.</li>
+                <li>🍞 O pão caseiro com nata e cuca é tradição no café da manhã em muitas cidades do interior.</li>
+            </ul>
+        </section>
+
+        <section class="intro-gastro" style="background-color:#f0f0f0; margin-top: 40px; padding: 24px; border-radius: 12px;">
+            <h2>Tabela de Pratos Típicos e Suas Origens</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prato</th>
+                        <th>Origem</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Churrasco</td>
+                        <td>Gaúcha</td>
+                        <td>Carne assada na brasa com tempero simples, símbolo da cultura gaúcha.</td>
+                    </tr>
+                    <tr>
+                        <td>Arroz de Carreteiro</td>
+                        <td>Tropeiros</td>
+                        <td>Prato rústico com arroz e carne seca, típico dos viajantes do interior.</td>
+                    </tr>
+                    <tr>
+                        <td>Chimarrão</td>
+                        <td>Indígena</td>
+                        <td>Bebida feita com erva-mate, símbolo de hospitalidade e convivência.</td>
+                    </tr>
+                    <tr>
+                        <td>Cuca</td>
+                        <td>Alemã</td>
+                        <td>Pão doce com cobertura crocante, legado dos imigrantes alemães.</td>
+                    </tr>
+                    <tr>
+                        <td>Pinhão</td>
+                        <td>Indígena</td>
+                        <td>Semente da araucária, consumida cozida no inverno, tradição do sul.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; font-size: 1.1rem; text-align: center;">
+                Quer aprender a fazer um dos pratos? Veja a receita tradicional de <a href="https://www.tudogostoso.com.br/receita/1525-churrasco-gaucho.html" target="_blank" rel="noopener noreferrer">Churrasco Gaúcho aqui</a>.
+            </p>
+        </section>
+
+        <div class="cta-center">
+            <a href="contato.html" class="cta">Peça dicas de restaurantes típicos</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Turismo no Rio Grande do Sul - Desenvolvido por Vitor da Silva Rodrigues</p>
+    </footer>
+</body>
+</html>

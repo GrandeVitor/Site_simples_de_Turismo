@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pontos Turísticos - Rio Grande do Sul</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        .intro-pontos {
+            background: var(--cinza-card, #F4EBD0);
+            color: var(--verde-principal, #006400);
+            border: 1.5px solid var(--cinza-borda, #ddd);
+            padding: 36px 20px 24px 20px;
+            border-radius: 16px;
+            margin-bottom: 36px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+            text-align: center;
+        }
+        .intro-pontos h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .cards-pontos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .ponto-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            width: 320px;
+            padding: 0 0 18px 0;
+            text-align: left;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .ponto-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+        }
+        .ponto-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 14px 14px 0 0;
+        }
+        .ponto-card-content {
+            padding: 18px 18px 0 18px;
+            flex: 1;
+        }
+        .ponto-card h3 {
+            color: #8B0000;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .ponto-card p {
+            font-size: 1rem;
+            color: #333;
+        }
+        .cta-center {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta {
+            background-color: #006400;
+            color: white;
+            padding: 12px 26px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #004d00;
+        }
+        ul.curiosidades {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        ul.curiosidades li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        @media (max-width: 900px) {
+            .cards-pontos { flex-direction: column; align-items: center; }
+        }
+
+        .mapa-container {
+            max-width: 1000px;
+            margin: 0 auto 40px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+            background: #fff;
+            padding: 20px;
+        }
+        .mapa-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body id="topo">
+    <header>
+        <h1>Pontos Turísticos do Rio Grande do Sul</h1>
+        <p>Polo: São Lourenço do Sul</p>
+        <p>Participante: Vitor da Silva Rodrigues</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pontos.html">Pontos Turísticos</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro-pontos">
+            <h2>Principais Pontos Turísticos</h2>
+            <p>O Rio Grande do Sul é repleto de destinos incríveis, que encantam por sua beleza natural, cultura e história.</p>
+            <p>Com paisagens variadas, clima agradável e grande influência europeia, o estado é um dos favoritos para turismo no Brasil.</p>
+        </section>
+
+        <section class="cards-pontos">
+            <div class="ponto-card">
+                <img src="imagens/gramado.jpg" alt="Gramado">
+                <div class="ponto-card-content">
+                    <h3>Gramado e Canela</h3>
+                    <p>Cidades famosas pela arquitetura charmosa, Natal Luz, neve artificial, parques temáticos e gastronomia europeia.</p>
+                </div>
+            </div>
+            <div class="ponto-card">
+                <img src="imagens/mirante-canion-itaimbezinho.webp" alt="Cânion Itaimbezinho">
+                <div class="ponto-card-content">
+                    <h3>Aparados da Serra</h3>
+                    <p>Os cânions Itaimbezinho e Fortaleza oferecem trilhas, mirantes e paisagens de tirar o fôlego.</p>
+                </div>
+            </div>
+            <div class="ponto-card">
+                <img src="imagens/praia do cassino.jpg" alt="Praia do Cassino">
+                <div class="ponto-card-content">
+                    <h3>Praia do Cassino</h3>
+                    <p>A maior praia do mundo, com 220 km de extensão, dunas, esportes e natureza preservada.</p>
+                </div>
+            </div>
+            <div class="ponto-card">
+                <img src="imagens/bento.png" alt="Bento Gonçalves">
+                <div class="ponto-card-content">
+                    <h3>Bento Gonçalves</h3>
+                    <p>Região da Rota do Vinho, conhecida pelas vinícolas, passeio de Maria Fumaça e gastronomia italiana.</p>
+                </div>
+            </div>
+            <div class="ponto-card">
+                <img src="imagens/porto alegre.jpg" alt="Porto Alegre">
+                <div class="ponto-card-content">
+                    <h3>Porto Alegre</h3>
+                    <p>Capital do estado, com Mercado Público, Usina do Gasômetro, orla do Guaíba e vida cultural intensa.</p>
+                </div>
+            </div>
+            <div class="ponto-card">
+                <img src="imagens/são_lourenço_do_sul.jpg" alt="São Lourenço do Sul">
+                <div class="ponto-card-content">
+                    <h3>São Lourenço do Sul</h3>
+                    <p>Conhecida por suas praias e paisagens naturais, cidade com rica cultura local e eventos tradicionais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-pontos" style="background:#fffbe6;">
+            <h2>Você sabia?</h2>
+            <ul class="curiosidades">
+                <li>🏔️ O Cânion Itaimbezinho é um dos maiores da América do Sul.</li>
+                <li>🍷 Bento Gonçalves é considerada a capital brasileira do vinho.</li>
+                <li>🏖️ A Praia do Cassino é a mais longa do mundo, segundo o Guinness Book.</li>
+                <li>🌇 Porto Alegre tem mais de 80 parques e áreas verdes.</li>
+            </ul>
+        </section>
+
+        <section class="intro-pontos" style="background: #f9f9f9; padding-bottom: 0;">
+            <h2>🗺️ Mapa Interativo dos Pontos Turísticos</h2>
+            <p style="margin-bottom: 24px;">Explore no mapa os locais turísticos mencionados neste site:</p>
+            <div class="mapa-container">
+                <iframe 
+                    src="https://www.google.com/maps/d/embed?mid=1HmYscqZ2j34MDswwb8B0uNWASh0afLM&hl=pt-BR&ehbc=2E312F" 
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <div class="cta-center" style="margin-top: 0;">
+                <a href="https://www.google.com/maps/d/viewer?mid=1HmYscqZ2j34MDswwb8B0uNWASh0afLM&hl=pt-BR" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="cta">
+                    🌍 Abrir Mapa em Nova Aba
+                </a>
+            </div>
+        </section>
+
+        <div class="cta-center">
+            <h2>Assista e encante-se com o RS</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7A9PDaqiF2s?si=JN9sOA3hL5t-Y6R6" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="cta-center">
+            <a href="#topo" class="cta">Voltar ao topo</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Turismo no Rio Grande do Sul - Desenvolvido por Vitor da Silva Rodrigues</p>
+    </footer>
+</body>
+</html>

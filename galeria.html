@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Rio Grande do Sul</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        .intro-galeria {
+            background: var(--cinza-card, #F4EBD0);
+            color: var(--verde-principal, #006400);
+            border: 1.5px solid var(--cinza-borda, #ccc);
+            padding: 32px 20px;
+            border-radius: 16px;
+            margin: 40px auto;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+            text-align: center;
+            max-width: 900px;
+        }
+        .intro-galeria h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+            margin: 0 auto 40px;
+            max-width: 1200px;
+        }
+        .galeria-item {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .galeria-item:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+        }
+        .galeria-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 14px 14px 0 0;
+        }
+        .galeria-caption {
+            padding: 12px 16px;
+            font-size: 1.05rem;
+            color: #8B0000;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+        .cta-center {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .cta-center .cta {
+            padding: 12px 24px;
+        }
+        @media (max-width: 900px) {
+            .galeria-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <p>Polo: São Lourenço do Sul</p>
+        <p>Participante: Vitor da Silva Rodrigues</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pontos.html">Pontos Turísticos</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+
+<main>
+    <section class="intro-galeria">
+        <h2>Imagens do Rio Grande do Sul</h2>
+        <p>Confira belas imagens da natureza, cultura e gastronomia do nosso estado.</p>
+    </section>
+
+    <section>
+        <h2 class="intro-galeria">Pontos Turísticos</h2>
+        <div class="galeria-grid">
+          <div class="galeria-item">
+    <img src="imagens/gramado.jpg" alt="Gramado">
+    <div class="galeria-caption">Gramado: charme europeu na Serra Gaúcha</div>
+</div>
+
+            <div class="galeria-item">
+                <img src="imagens/canela-rs.jpg" alt="Canela">
+                <div class="galeria-caption">Canela: natureza e arquitetura</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/mirante-canion-itaimbezinho.webp" alt="Cânion Itaimbezinho">
+                <div class="galeria-caption">Itaimbezinho: beleza natural dos Aparados da Serra</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/praia do cassino.jpg" alt="Praia do Cassino">
+                <div class="galeria-caption">Praia do Cassino: maior praia do mundo</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/nova_petropolis.jpg" alt="Nova Petrópolis">
+                <div class="galeria-caption">Nova Petrópolis: herança germânica nas hortênsias</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/ruinas_de_são_miguel.jpg" alt="Ruínas Jesuíticas">
+                <div class="galeria-caption">Ruínas de São Miguel das Missões: Patrimônio Histórico</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="intro-galeria">Cultura e Tradições</h2>
+        <p style="max-width:900px; margin: 16px auto; text-align:left;">
+            O Rio Grande do Sul mistura influências indígenas, europeias e tropeiras. A pilcha, o chimarrão e o fandango são símbolos vivos dessa herança.
+        </p>
+        <div class="galeria-grid">
+            <div class="galeria-item">
+                <img src="imagens/festa_farroupilha.jpg" alt="Semana Farroupilha">
+                <div class="galeria-caption">Semana Farroupilha: orgulho gaúcho</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/festa_da_uva.jpg" alt="Festa da Uva">
+                <div class="galeria-caption">Festa da Uva: celebração italiana</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/fenadoce.jpg" alt="Fenadoce">
+                <div class="galeria-caption">Fenadoce: doces e tradição de Pelotas</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/ctg-horizontina.webp" alt="CTG">
+                <div class="galeria-caption">CTG: cultura viva nas danças e no laço</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/chula.jpg" alt="Chula Gaúcha">
+                <div class="galeria-caption">Chula: sapateado tradicional do gaúcho</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/pilchas.webp" alt="Vestimenta Gaúcha">
+                <div class="galeria-caption">Pilcha: vestimenta oficial do gaúcho</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="intro-galeria">Gastronomia Típica</h2>
+        <div class="galeria-grid">
+            <div class="galeria-item">
+                <img src="imagens/churrascaria-em-gramado.jpg" alt="Churrasco">
+                <div class="galeria-caption">Churrasco: tradição dos galpões</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/arroz carreteiro.avif" alt="Arroz de Carreteiro">
+                <div class="galeria-caption">Arroz de Carreteiro: prato dos tropeiros</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/cuca-alema.jpeg" alt="Cuca Alemã">
+                <div class="galeria-caption">Cuca: pão doce de origem alemã</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/pinhão.webp" alt="Pinhão">
+                <div class="galeria-caption">Pinhão: cozido no fogão à lenha</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/chimarrao.jpg" alt="Chimarrão">
+                <div class="galeria-caption">Chimarrão: símbolo de união</div>
+            </div>
+            <div class="galeria-item">
+                <img src="imagens/galeto.jfif" alt="Galeto ao Primo Canto">
+                <div class="galeria-caption">Galeto: especialidade da Serra Gaúcha</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-center">
+        <a href="contato.html" class="cta">Envie sua foto ou sugestão!</a>
+    </div>
+</main>
+
+    <footer>
+        <p>&copy; 2025 Turismo no Rio Grande do Sul - Desenvolvido por Vitor da Silva Rodrigues</p>
+    </footer>
+</body>
+</html>

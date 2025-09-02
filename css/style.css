@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-principal: #20603d;
+    --verde-hover: #388e5c;
+    --vermelho-detalhe: #8B0000;
+    --amarelo-destaque: #FFD700;
+    --cinza-fundo: #f7f7f7;
+    --cinza-card: #fff;
+    --cinza-borda: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cinza-fundo);
+    color: #222;
+    line-height: 1.6;
+    padding: 0;
+}
+
+header {
+    background: var(--cinza-card);
+    border-bottom: 2px solid var(--cinza-borda);
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 8px rgba(32,96,61,0.04);
+    margin-bottom: 20px;
+    padding: 32px 0 18px 0;
+    text-align: center;
+    color: var(--verde-principal);
+}
+
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--verde-principal);
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #444;
+}
+
+nav {
+    background: var(--cinza-card);
+    border-radius: 10px;
+    border: 1.5px solid var(--cinza-borda);
+    margin: 0 auto 30px auto;
+    max-width: 950px;
+    box-shadow: 0 2px 8px rgba(32,96,61,0.03);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 18px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 18px;
+    color: var(--verde-principal);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: var(--amarelo-destaque);
+    color: var(--verde-principal);
+}
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    background: none;
+}
+
+main h2 {
+    color: var(--verde-principal);
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main p {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+}
+
+main img {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(32,96,61,0.07);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.95rem;
+    color: #666;
+    background: none;
+}
+
+form {
+    background: var(--cinza-card);
+    padding: 24px 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 16px rgba(32,96,61,0.07);
+    border: 1.5px solid var(--cinza-borda);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--verde-principal);
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid var(--cinza-borda);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    background: #fafafa;
+    transition: border 0.2s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: var(--verde-principal);
+    outline: none;
+}
+
+form button {
+    background: var(--verde-principal);
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.08rem;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+form button:hover {
+    background: var(--amarelo-destaque);
+    color: var(--verde-principal);
+}
+
+.card, .ponto-card, .gastro-card, .galeria-item {
+    background: var(--cinza-card);
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(32,96,61,0.07);
+    border: 1.5px solid var(--cinza-borda);
+}
+.card h3, .ponto-card h3, .gastro-card h3, .galeria-caption {
+    color: var(--verde-principal);
+}
+
+.cta, .cta-center a.cta {
+    background: var(--amarelo-destaque);
+    color: var(--verde-principal);
+    padding: 16px 28px;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(32,96,61,0.07);
+    display: inline-block;
+    margin-top: 18px;
+    border: none;
+}
+.cta:hover {
+    background: var(--verde-principal);
+    color: #fff;
+}
+
+.link-destaque {
+    color: var(--verde-principal);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.link-destaque:hover {
+    text-decoration: underline;
+    color: var(--vermelho-detalhe);
+}
+
+.cta-center {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.banner, .intro-pontos, .intro-gastro, .intro-galeria, .intro-contato {
+    background: var(--cinza-card);
+    color: var(--verde-principal);
+    border: 1.5px solid var(--cinza-borda);
+    box-shadow: 0 4px 18px rgba(32,96,61,0.07);
+}
+
+@media (max-width: 900px) {
+    nav ul { flex-direction: column; gap: 0; }
+    main { padding: 0 8px; }
+}
+
